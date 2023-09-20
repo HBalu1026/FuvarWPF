@@ -1,0 +1,53 @@
+﻿<Window x:Class="dolgozat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dolgozat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblHarmadik">3</Label>
+        <Button Grid.Column="1"
+                Margin="110, 10"
+                Click="Harmadik_Feladat">Harmadik feladat</Button>
+        <Label x:Name="lblNegyedik"
+               Grid.Row="1">4</Label>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Margin="110, 10"
+                Click="Negyedik_Feladat">Negyedik feladat</Button>
+        <Label x:Name="lblOtodik"
+               Grid.Row="2">5</Label>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Margin="110, 10"
+                Click="Ötödik_Feladat">Ötödik feladat</Button>
+        <Label x:Name="lblHatodik"
+               Grid.Row="3">6</Label>
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Margin="110, 10"
+                Click="Hatodik_Feladat">Hatodik feladat</Button>
+        <Label x:Name="lblNyolcadik"
+               Grid.Row="4">8</Label>
+        <Label x:Name="lblPath"
+               Grid.Row="5">..</Label>
+        <Button Grid.Row="5"
+                Grid.Column="1"
+                Margin="110, 10"
+                Click="fajlBeolvasas">Fájl beolvasás</Button>
+    </Grid>
+</Window>
